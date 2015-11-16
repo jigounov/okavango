@@ -26,7 +26,6 @@ NameVirtualHost *
   ProxyPassReverse / http://localhost:8081/eventhose/
 </VirtualHost>
 
-
 4. sudo vi /usr/share/tomcat7/conf/server.xml
 
 <Connector port="8081" proxyName="www.okavangochildcare.com" proxyPort="80"/>
