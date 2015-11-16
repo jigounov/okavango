@@ -1,0 +1,35 @@
+1. Launch Amazon Instance with Tomcat7/java7, ssh to it and do:
+
+2. sudo vi /etc/httpd/conf/httpd.conf
+
+#ServerName www.okavangochildcare.com:80
+#ProxyPass / http://localhost:8081/okavango/
+#ProxyPassReverse / http://localhost:8081/okavango/
+NameVirtualHost *
+
+<VirtualHost *>
+  ProxyPreserveHost On
+  ServerName www.okavangochildcare.com:80
+  ProxyPass / http://localhost:8081/okavango/
+  ProxyPassReverse / http://localhost:8081/okavango/
+</VirtualHost>
+<VirtualHost *>
+  ProxyPreserveHost On
+  ServerName eventhose.com:80
+  ProxyPass / http://localhost:8081/eventhose/
+  ProxyPassReverse / http://localhost:8081/eventhose/
+</VirtualHost>
+<VirtualHost *>
+  ProxyPreserveHost On
+  ServerName www.eventhose.com:80
+  ProxyPass / http://localhost:8081/eventhose/
+  ProxyPassReverse / http://localhost:8081/eventhose/
+</VirtualHost>
+
+
+4. sudo vi /usr/share/tomcat7/conf/server.xml
+
+<Connector port="8081" proxyName="www.okavangochildcare.com" proxyPort="80"/>
+
+5. sudo service httpd restart
+6. sudo service tomcat7 restart
