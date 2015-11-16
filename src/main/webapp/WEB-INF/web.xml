@@ -1,0 +1,75 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+				 version="2.4">
+
+		<display-name>Okavango Child Care</display-name>
+		<session-config>
+			<session-timeout>60</session-timeout>
+		</session-config>
+		<welcome-file-list>
+			<welcome-file>home</welcome-file>
+		</welcome-file-list>
+
+<!--
+		<context-param>
+				<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+				<param-value>ApplicationResources</param-value>
+		</context-param>
+-->
+
+	<filter>
+		<filter-name>UnicodeFilter</filter-name>
+		<filter-class>com.okavango.servlets.UnicodeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>UnicodeFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+<!--
+	<servlet>
+		<servlet-name>init</servlet-name><servlet-class>org.tracka.servlets.InitServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+-->
+
+	<servlet> <servlet-name>home</servlet-name><servlet-class>com.okavango.servlets.HomeServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>home</servlet-name><url-pattern>/home</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>home</servlet-name><url-pattern>/ru</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>home</servlet-name><url-pattern>/ru/home</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>schedule</servlet-name><servlet-class>com.okavango.servlets.ScheduleServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>schedule</servlet-name><url-pattern>/schedule</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>schedule</servlet-name><url-pattern>/ru/schedule</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>curriculum</servlet-name><servlet-class>com.okavango.servlets.CurriculumServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>curriculum</servlet-name><url-pattern>/curriculum</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>curriculum</servlet-name><url-pattern>/ru/curriculum</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>rates</servlet-name><servlet-class>com.okavango.servlets.RatesServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>rates</servlet-name><url-pattern>/rates</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>rates</servlet-name><url-pattern>/ru/rates</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>meals</servlet-name><servlet-class>com.okavango.servlets.MealsServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>meals</servlet-name><url-pattern>/meals</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>meals</servlet-name><url-pattern>/ru/meals</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>pictures</servlet-name><servlet-class>com.okavango.servlets.PicturesServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>pictures</servlet-name><url-pattern>/pictures</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>pictures</servlet-name><url-pattern>/ru/pictures</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>news</servlet-name><servlet-class>com.okavango.servlets.NewsServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>news</servlet-name><url-pattern>/news</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>news</servlet-name><url-pattern>/ru/news</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>contacts</servlet-name><servlet-class>com.okavango.servlets.ContactsServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>contacts</servlet-name><url-pattern>/contacts</url-pattern> </servlet-mapping>
+	<servlet-mapping> <servlet-name>contacts</servlet-name><url-pattern>/ru/contacts</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>robots</servlet-name><servlet-class>com.okavango.servlets.RobotsServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>robots</servlet-name><url-pattern>/robots.txt</url-pattern> </servlet-mapping>
+
+	<servlet> <servlet-name>sitemap</servlet-name><servlet-class>com.okavango.servlets.SiteMapServlet</servlet-class> </servlet>
+	<servlet-mapping> <servlet-name>sitemap</servlet-name><url-pattern>/sitemap.xml</url-pattern> </servlet-mapping>
+</web-app>
