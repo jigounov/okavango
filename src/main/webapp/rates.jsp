@@ -28,22 +28,22 @@
 						<tbody><tr class="tbl-hdng">
 							<td>Program</td>
 							<td>24+ Months</td>
-							<td>12-24 Months</td>
+							<td>18-24 Months</td>
 						</tr>
 						<tr>
 							<th>Full Time</th>
-							<td>$1150 per month</td>
-							<td>$1250 per month</td>
+							<td>$1200 per month</td>
+							<td>$1300 per month</td>
 						</tr>
 						<tr>
 							<th>Part Time (Whole Day)</th>
-							<td>$60 per month</td>
 							<td>$65 per month</td>
+							<td>$70 per month</td>
 						</tr>
 						<tr>
 							<th>Part Time (Half Day - 4 Hours)</th>
-							<td>$40 per month</td>
 							<td>$45 per month</td>
+							<td>$50 per month</td>
 						</tr>
 						<tr>
 							<th>Drop In (Hourly)</th>
@@ -51,6 +51,8 @@
 							<td>$13 per hour</td>
 						</tr>
 						</tbody></table>
+					<br/>
+					<p>We also provide after school care - <a href="/contacts">ask us</a> about pickup and current rates.</p>
 				</div>
 				<div class="cntR">
 					<div class="sidebar-reel">
