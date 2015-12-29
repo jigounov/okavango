@@ -64,12 +64,12 @@
 					   Okavango Childcare
 					   <%}%>
 				   </h2>
-				   <ul class="contactList">
-					   <li><span class="glyphicon glyphicon-map-marker"></span> 3790 Rosemar Ave, San Jose, CA.</li>
-					   <li><span class="glyphicon glyphicon-star"></span> License No. 434412476</li>
-					   <li><span class="glyphicon glyphicon-globe"></span> <a href="http://www.OkavangoChildCare.com">http://www.OkavangoChildCare.com</a></li>
-					   <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a></li>
-				   </ul>
+					<ul class="contactList">
+						<li><span class="glyphicon glyphicon-map-marker"></span> 3790 Rosemar Ave, San Jose, CA 95127.</li>
+						<li><span class="glyphicon glyphicon-star"></span> License No. 434412476</li>
+						<li><span class="glyphicon glyphicon-globe"></span> <a href="http://www.OkavangoChildCare.com">http://www.OkavangoChildCare.com</a></li>
+						<li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a></li>
+					</ul>
 				   <%--<div itemscope itemtype="http://schema.org/Organization" align="center">
 					   <div itemprop="location">
 							<span itemscope itemtype="http://schema.org/Place">
