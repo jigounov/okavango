@@ -22,7 +22,7 @@
 			<jsp:include page="header.jsp"/>
 			<div class="site-banner">
 				<h1>We Know Child Care!</h1>
-				<h2>The best child care center in San Jose, CA. <a href="${root}/contacts" class="btn btn-primary">Get In Touch</a></h2>
+				<h2>Russian-English bilingual program in San Jose, CA. <a href="${root}/contacts" class="btn btn-primary">Get In Touch</a></h2>
 				<p>We believe all children should be cared for in a nurturing, safe, and caring environment, which caters for the individual needs of each child and family. We constantly access research into best quality educational and caring practices, and continuously train our staff to implement innovative as well as time proven ideas into the children’s programs. <a href="${root}/curriculum">See Curriculum</a></p>
 			</div>
 			<div class="contents">
