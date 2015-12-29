@@ -16,45 +16,57 @@
 	<jsp:include page="ga.jspf"/>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<h2>Rates</h2>
-<br/>
-We have Full-time, Part-time and Drop-in programs suitable for working parents and full-time moms.<br/>
-We have more adults for every child then most of other preschools which means your child will have more attention.
-<br/><br/>
+	<div class="containerBG">
+		<div class="container">
+			<jsp:include page="header.jsp"/>
+			<div class="contents">
+				<div class="cntL">
+					<h2>Rates</h2>
+					<p>We have Full-time, Part-time and Drop-in programs suitable for working parents and full-time moms. We have more adults for every child then most of other preschools which means your child will have more attention.</p>
 
-<table class="table" style="float:left;">
-	<thead>
-	<tr>
-		<td> </td>
-		<td>24+ Months</td>
-		<td>12-24 Months</td>
-	</tr>
-	</thead>
-	<tr>
-		<td>Full Time</td>
-		<td>$1150 per month</td>
-		<td>$1250 per month</td>
-	</tr>
-	<tr>
-		<td>Part Time (Whole day)</td>
-		<td>$60 per day</td>
-		<td>$65 per day</td>
-	</tr>
-	<tr>
-		<td>Part Time (Half day - 4 hours)</td>
-		<td>$40 per half day</td>
-		<td>$45 per half day</td>
-	</tr>
-	<tr>
-		<td>Drop-in (hourly)</td>
-		<td>$12 per hour</td>
-		<td>$13 per hour</td>
-	</tr>
-</table>
-<img width="240" height="160" src="/images/vicky.jpg" class="gray-border" style="margin-left:1em;" alt="Vicky">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody><tr class="tbl-hdng">
+							<td>Program</td>
+							<td>24+ Months</td>
+							<td>12-24 Months</td>
+						</tr>
+						<tr>
+							<th>Full Time</th>
+							<td>$1150 per month</td>
+							<td>$1250 per month</td>
+						</tr>
+						<tr>
+							<th>Part Time (Whole Day)</th>
+							<td>$60 per month</td>
+							<td>$65 per month</td>
+						</tr>
+						<tr>
+							<th>Part Time (Half Day - 4 Hours)</th>
+							<td>$40 per month</td>
+							<td>$45 per month</td>
+						</tr>
+						<tr>
+							<th>Drop In (Hourly)</th>
+							<td>$12 per hour</td>
+							<td>$13 per hour</td>
+						</tr>
+						</tbody></table>
+				</div>
+				<div class="cntR">
+					<div class="sidebar-reel">
+						<a href="${root}/pictures"><img src="/images/image-1.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-2.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-4.jpg"></a>
+					</div>
+					<a href="${root}/pictures" class="btn-gallery">View Picture Gallery</a>
+				</div>
+				<div class="cls"></div>
+			</div>
 
-<br/><br/>
-<jsp:include page="footer.jsp"/>
+			<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
+
+
 </body>
 </html>

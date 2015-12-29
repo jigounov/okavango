@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXVUd2Ov-eCcNwehyl02FXrMe8se86rI0&sensor=false"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXVUd2Ov-eCcNwehyl02FXrMe8se86rI0"></script>
 	<script type="text/javascript">
 		var map;
 		function initialize() {
@@ -52,46 +52,51 @@
 	<jsp:include page="ga.jspf"/>
 </head>
 <body onload="initialize()">
-<jsp:include page="header.jsp"/>
-<div itemscope itemtype="http://schema.org/Organization" align="center">
-	<h2>
-		<span itemprop="name">
-			<%if("/ru".equals(request.getAttribute("root"))) {%>
-			Russian Childcare - Мы говорим по-русски!
-			<%} else {%>
-			Okavango Childcare
-			<%}%>
-		</span>
-		<img itemprop="logo" src="/images/children.jpg" alt="Childcare">
-	</h2>
-	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-		<span itemprop="streetAddress">3790 Rosemar Ave</span>,
-		<span itemprop="addressLocality">San Jose</span>,
-		<span itemprop="addressRegion">CA</span>.
-	</span>
-	<br/>
-	<span itemprop="telephone">408-439-5283</span>
-	<br/>
-	<a href="http://www.OkavangoChildCare.com" itemprop="url">http://www.OkavangoChildCare.com</a>
-	<br/>
-	Email: <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a><br/>
-	License #434412476
-	<div itemprop="location">
-	<span itemscope itemtype="http://schema.org/Place">
-		<div itemprop="geo">
-			<span itemscope itemtype="http://schema.org/GeoCoordinates">
-				<span property="latitude" content="37.372317"></span>
-				<span property="longitude" content="-121.799629"></span>
-			</span>
+	<div class="containerBG">
+		<div class="container">
+			<jsp:include page="header.jsp"/>
+			<div class="contents">
+			   <div class="cntL">
+				   <h2>
+					   <%if("/ru".equals(request.getAttribute("root"))) {%>
+					   Russian Childcare - Мы говорим по-русски!
+					   <%} else {%>
+					   Okavango Childcare
+					   <%}%>
+				   </h2>
+				   <ul class="contactList">
+					   <li><span class="glyphicon glyphicon-map-marker"></span> 3790 Rosemar Ave, San Jose, CA.</li>
+					   <li><span class="glyphicon glyphicon-star"></span> License No. 434412476</li>
+					   <li><span class="glyphicon glyphicon-globe"></span> <a href="http://www.OkavangoChildCare.com">http://www.OkavangoChildCare.com</a></li>
+					   <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a></li>
+				   </ul>
+				   <%--<div itemscope itemtype="http://schema.org/Organization" align="center">
+					   <div itemprop="location">
+							<span itemscope itemtype="http://schema.org/Place">
+								<div itemprop="geo">
+									<span itemscope itemtype="http://schema.org/GeoCoordinates">
+										<span property="latitude" content="37.372317"></span>
+										<span property="longitude" content="-121.799629"></span>
+									</span>
+								</div>
+							</span>
+					   </div>
+				   </div>--%>
+				   <div id="map_canvas" style="width: 100%; height: 400px;"></div>
+			   </div>
+				<div class="cntR">
+					<div class="sidebar-reel">
+						<a href="${root}/pictures"><img src="/images/image-1.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-2.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-3.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-4.jpg"></a>
+					</div>
+					<a href="${root}/pictures" class="btn-gallery">View Picture Gallery</a>
+				</div>
+				<div class="cls"></div>
+			</div>
+			<jsp:include page="footer.jsp"/>
 		</div>
-	</span>
-</div>
-</div>
-
-
-<br/><br/>
-<div id="map_canvas" style="width: 100%; height: 400px; border: 1px solid #aaa"></div>
-<jsp:include page="footer.jsp"/>
-
+	</div>
 </body>
 </html>

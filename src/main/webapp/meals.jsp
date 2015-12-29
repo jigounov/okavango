@@ -15,25 +15,75 @@
 	<jsp:include page="ga.jspf"/>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<h2>Meals</h2>
-<br/>
-<img src="/images/meals.jpg" alt="Meals" class="gray-border" style="float:right;margin-left:1em;"/>
-<img src="/images/meals2.jpg" alt="Meals" class="gray-border" style="float:right;clear:right;margin:1em 0 0 1em;"/>
-Our meals are nutritious and healthy.
-<br/>Everything is homemade and we use mostly organic food for our meals. <br/>The meals are provided at no extra charge.
-<br/>Here is a sample of our menu.
-<br/><br/>
-<table class="table">
-	<thead>
-			<tr><td> </td><td>Breakfast</td><td>Morning Snack</td><td>Lunch</td><td>Afternoon Snack</td></tr>
-	</thead>
-	<tr><td>Monday</td><td>Oatmeal cereal,Milk</td><td>Crackers, Apples, Milk</td><td>Meat balls with Mashed potatoes</td><td>Apple pie, Milk</td></tr>
-	<tr><td>Tuesday</td><td>Omelet,Milk</td><td>Crackers, Carrots, Milk</td><td>Pasta with Sausages</td><td>Cheese cake, Milk</td></tr>
-	<tr><td>Wednesday</td><td>Crapes, Milk</td><td>Crackers, Pears, Milk</td><td>Rice with steamed meat</td><td>Fruit pie, Milk</td></tr>
-	<tr><td>Thursday</td><td>Rice cereal, Milk </td><td>Crackers, Bananas, Milk</td><td>Chicken soup</td><td>Cookies, Juice</td></tr>
-	<tr><td>Friday</td><td>Pan cakes, Milk</td><td>Crackers, Oranges, Juice</td><td>Chicken with Rice</td><td>Fruit salad, Milk</td></tr>
-</table>
-<jsp:include page="footer.jsp"/>
+	<div class="containerBG">
+		<div class="container">
+			<jsp:include page="header.jsp"/>
+			<div class="contents">
+				<div class="cntL">
+					<h2>Meals</h2>
+					<p>Our meals are nutritious and healthy. Everything is homemade and we use mostly organic food for our meals. The meals are provided at no extra charge.</p>
+					<p>Here is a sample of our menu.</p>
+
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody><tr class="tbl-hdng">
+							<td></td>
+							<td>Breakfast</td>
+							<td>Morning Snack</td>
+							<td>Lunch</td>
+							<td>Afternoon Snack</td>
+						</tr>
+						<tr>
+							<th>Monday</th>
+							<td>Oatmeal cereal, Milk</td>
+							<td>Crackers, Apples, Milk</td>
+							<td>Meat balls with Mashed potatoes</td>
+							<td>Apple pie, Milk</td>
+						</tr>
+						<tr>
+							<th>Tuesday</th>
+							<td>Omelet,Milk</td>
+							<td>Crackers, Carrots, Milk</td>
+							<td>Pasta with Sausages</td>
+							<td>Cheese cake, Milk</td>
+						</tr>
+						<tr>
+							<th>Wednesday</th>
+							<td>Crapes, Milk</td>
+							<td>Crackers, Pears, Milk</td>
+							<td>Rice with steamed meat</td>
+							<td>Fruit pie, Milk</td>
+						</tr>
+						<tr>
+							<th>Thursday</th>
+							<td>Rice cereal, Milk</td>
+							<td>Crackers, Bananas, Milk</td>
+							<td>Chicken soup</td>
+							<td>Cookies, Juice</td>
+						</tr>
+						<tr>
+							<th>Friday</th>
+							<td>Pan cakes, Milk</td>
+							<td>Crackers, Oranges, Juice</td>
+							<td>Chicken with Rice</td>
+							<td>Fruit salad, Milk</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="cntR">
+					<div class="sidebar-reel">
+						<a href="${root}/pictures"><img src="/images/image-1.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-2.jpg"></a>
+						<a href="${root}/pictures"><img src="/images/image-4.jpg"></a>
+					</div>
+					<a href="${root}/pictures" class="btn-gallery">View Picture Gallery</a>
+				</div>
+				<div class="cls"></div>
+			</div>
+
+			<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
+
 </body>
 </html>

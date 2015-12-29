@@ -1,18 +1,15 @@
-<div>
-	<img style="float:left;" src="/images/bigstock_Funny_kids__-_friendship_ra_17380346-small.jpg" alt="Okavango Kids">
-	<a class="header">Okavango Childcare</a>
+<div class="siteName">
+	<a href="index.html">Okavango Child Care</a>
+	<img src="/images/logo.png" alt="Okavango Child Care">
 </div>
-
-<div class="top-menu">
-	<a href="${root}/" <%=request.getRequestURI().endsWith("/home.jsp")?"class=active-menu":""%>>Home</a>
-	<a href="${root}/pictures" <%=request.getRequestURI().endsWith("/pictures.jsp")?"class=active-menu":""%>>Pictures</a>
-	<a href="${root}/schedule" <%=request.getRequestURI().endsWith("/schedule.jsp")?"class=active-menu":""%>>Schedule</a>
-	<a href="${root}/curriculum" <%=request.getRequestURI().endsWith("/curriculum.jsp")?"class=active-menu":""%>>Curriculum</a>
-	<a href="${root}/rates" <%=request.getRequestURI().endsWith("/rates.jsp")?"class=active-menu":""%>>Rates</a>
-	<a href="${root}/meals" <%=request.getRequestURI().endsWith("/meals.jsp")?"class=active-menu":""%>>Meals</a>
-	<%--<a href="${root}/news"<%=request.getRequestURI().endsWith("/news.jsp")?"class=active-menu":""%>>News</a>--%>
-	<a href="https://www.facebook.com/groups/522473377813143/">News</a>
-	<a href="${root}/contacts" <%=request.getRequestURI().endsWith("/contacts.jsp")?"class=active-menu":""%>>Contacts</a>
-	<br/>
-</div>
-<br/><br/>
+<ul class="topMenu">
+	<li <%=request.getRequestURI().endsWith("/home.jsp")?"class=active":""%>><a href="${root}/">Home</a></li>
+	<li <%=request.getRequestURI().endsWith("/pictures.jsp")?"class=active":""%>><a href="${root}/pictures" >Pictures</a></li>
+	<li <%=request.getRequestURI().endsWith("/schedule.jsp")?"class=active":""%>><a href="${root}/schedule">Schedule</a></li>
+	<li <%=request.getRequestURI().endsWith("/curriculum.jsp")?"class=active":""%>><a href="${root}/curriculum">Curriculum</a></li>
+	<li <%=request.getRequestURI().endsWith("/rates.jsp")?"class=active":""%>><a href="${root}/rates">Rates</a></li>
+	<li <%=request.getRequestURI().endsWith("/meals.jsp")?"class=active":""%>><a href="${root}/meals">Meals</a></li>
+	<li><a href="https://www.facebook.com/groups/522473377813143/" target="_blank">News</a></li>
+	<li <%=request.getRequestURI().endsWith("/contacts.jsp")?"class=active":""%>><a href="${root}/contacts">Contacts</a></li>
+	<div class="cls"></div>
+</ul>

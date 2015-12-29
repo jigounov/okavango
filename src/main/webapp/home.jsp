@@ -17,52 +17,43 @@
 	<jsp:include page="ga.jspf"/>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<br/>
-<h2>About Us</h2>
-<div>
-	OKAVANGO is a daycare home offering preschool and child care for children ages 18 month and up. This bilingual Russian/English program was opened in 2011.  Our goal is to produce happy, intelligent, well-adjusted children and to offer the best possible care for children from toddlers to kindergarteners so that parents and their children will both enjoy the experience of early education. We speak both languages here Russian and English as well as our kids. Classes also are taught in both languages.
-	We offer a low student-to-teacher ratio for the most effective learning environment, ensuring that your child is given every opportunity to succeed. Students receive individual attention on a one-to-one basis and also benefit from group interactions in which they can build confidence in a larger social environment. Our student-teacher ratio is 1:6. For best results we divide children on two groups for classes.
-	Each child has unique talents, learning style and personality. We are committed to working within each child’s comfort zone to ensure optimal social, emotional and educational results. We never force children to participate in any activities during the day. In this age they still need hugging and kisses from their teachers but we try to enthrall children with activities. Joy on their faces during lessons is the best reward for us. Each class lasts 20-30 min, it helps children to be focused on what they are doing.
-</div>
-<%--
-<div class=big-blue style="float:left;width:460px;margin-right:20px;">
-	- Ages 18 months and up<br/>
-	<%if("/ru".equals(request.getAttribute("root"))) {%>
-	- Bilingual English/Russian<br/>
-	<%}%>
-	- Open 8AM - 6PM (Extended hours available by request)<br/>
-	- <a href="${root}/schedule">Variety of classes (Music, Dance, Preschool classes, Art and Crafts, Musical Theater, Speech Therapist)</a><br/>
-	- <a href="${root}/meals">Home-cooked nutritious meals (included)</a><br/>
-	- Potty training<br/>
-	- Affordable rates<br/>
-	- Clean renovated house on a hill<br/>
-	- Large indoor / outdoor play areas<br/>
-</div>
+	<div class="containerBG">
+		<div class="container">
+			<jsp:include page="header.jsp"/>
+			<div class="site-banner">
+				<h1>We Know Child Care!</h1>
+				<h2>The best child care center in San Jose, CA. <a href="${root}/contacts" class="btn btn-primary">Get In Touch</a></h2>
+				<p>We believe all children should be cared for in a nurturing, safe, and caring environment, which caters for the individual needs of each child and family. We constantly access research into best quality educational and caring practices, and continuously train our staff to implement innovative as well as time proven ideas into the children’s programs. <a href="${root}/curriculum">See Curriculum</a></p>
+			</div>
+			<div class="contents">
+				<div class="cntL">
+					<h2>About Okavango Child care</h2>
+					<p>OKAVANGO is a daycare home offering preschool and child care for children ages 18 month and up. This bilingual Russian/English program was opened in 2011. Our goal is to produce happy, intelligent, well-adjusted children and to offer the best possible care for children from toddlers to kindergarteners so that parents and their children will both enjoy the experience of early education. We speak both languages here Russian and English as well as our kids. Classes also are taught in both languages.</p>
+					<p><img src="/images/girl-play.jpg">We offer a low student-to-teacher ratio for the most effective learning environment, ensuring that your child is given every opportunity to succeed. Students receive individual attention on a one-to-one basis and also benefit from group interactions in which they can build confidence in a larger social environment. Our student-teacher ratio is 1:6. For best results we divide children on two groups for classes. Each child has unique talents, learning style and personality.</p>
+					<p>We are committed to working within each child’s comfort zone to ensure optimal social, emotional and educational results. We never force children to participate in any activities during the day. In this age they still need hugging and kisses from their teachers but we try to enthrall children with activities. Joy on their faces during lessons is the best reward for us. Each class lasts 20-30 min, it helps children to be focused on what they are doing.</p>
+				</div>
+				<div class="cntR">
+					<div class="sidebar-reel">
+						<a href="${root}/pictures">
+							<img src="/images/image-1.jpg">
+						</a>
+						<a href="${root}/pictures">
+							<img src="/images/image-2.jpg">
+						</a>
+						<a href="${root}/pictures">
+							<img src="/images/image-3.jpg">
+						</a>
+						<a href="${root}/pictures">
+							<img src="/images/image-4.jpg">
+						</a>
+					</div>
+					<a href="${root}/pictures" class="btn-gallery">View Picture Gallery</a>
+				</div>
+				<div class="cls"></div>
+			</div>
 
-<div style="margin-left:480px;">
-You want your child to get best education and best care, but how do you know where to get it?
-While love, care and education for small kids are hard to measure there is one number you should be looking for:
-student to teacher ratio. Ours is 4. Yes, it's one teacher for every 4 kids. Remember this number
-when you make your decision. We are not afraid to indulge your children with attention.
-We believe the more love children get in their childhood the more successful they will be in their lives.
-Our goal is to create a place where children like to be! A lot of fun, a lot of toys, good friends – that's all about us!
-
-<br/><br/>
-Okavango Childcare is a State and City licensed facility. We meet safety, health and nutritional standards.
-</div>
---%>
-<br/>
-<div align=center style="clear:both;">
-<div style="width:800px;">
-	<img width="240" height="160" src="/images/house-left.jpg" class="gray-border" style="margin-left:5px;" alt="Living Room"/>
-	<img width="240" height="160" src="/images/outside-play.jpg" class="gray-border" style="margin-left:5px;" alt="Dining Area"/>
-	<img width="240" height="160" src="/images/victoria.jpg" class="gray-border" style="margin-left:5px;" alt="Victoria">
-	<img width="240" height="160" src="/images/playroom.jpg" class="gray-border" style="margin-left:5px;" alt="Living Room"/>
-	<img width="240" height="160" src="/images/redroom.jpg" class="gray-border" style="margin-left:5px;" alt="Red Room"/>
-	<img width="240" height="160" src="/images/kitchen.jpg" class="gray-border" style="margin-left:5px;" alt="Dining Area"/>
-</div>
-</div>
-<jsp:include page="footer.jsp"/>
+			<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
 </body>
 </html>

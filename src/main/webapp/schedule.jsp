@@ -17,52 +17,114 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<h2>
-	<%if("/ru".equals(request.getAttribute("root"))) {%>
-	Расписание
-	<%} else {%>
-	Schedule
-	<%}%>
-</h2>
-<br/>
-We offer variety of classes for children - music, dancing, gymnastics, ABCs/reading, math, arts and crafts.
-Our day will consist of one or more of the following: Use and develop of language skills, use of large and small muscles, use of materials that encourage creativity and imaginary play, daily indoor and outdoor activities pending the weather, active and quiet play, individual and group activities.
-This will all help in learning new ideas and skills, be exposed to a variety of cultures, and protect them from excess fatigue and over stimulation.
-<br/>
-<br/>Children need a simple routine to follow. This helps them learn and anticipate what comes next. This is subject to change from day to day depending on the children’s interest and of course the weather.
-<br/><br/>
-<img src="/images/lego.jpg" alt="Play" class="gray-border" style="margin-left:1em;"/>
-<img src="/images/painting.jpg" alt="Play" class="gray-border" style="margin-left:1em;"/>
-<img src="/images/crafts.jpg" alt="Play" class="gray-border" style="margin-left:1em;"/>
-
-<br style="clear:both;"/><br/><br/>
-
-<table class="table">
-	<tr><td>8:00AM-8:45AM</td><td>free play</td></tr>
-	<tr><td>8:45AM-9:15AM</td><td>breakfast</td></tr>
-	<tr><td>9:15AM-9:30AM</td><td>gymnastics</td></tr>
-	<tr><td>9:30AM-10:45AM</td>
-		<td><a onclick="$('#classesDiv').toggle();return false;" href="/">classes</a><br/>
-			<div id="classesDiv" style="display:none;border: solid 1px #d3d3d3;">
-				More about classes goes here
+	<div class="containerBG">
+		<div class="container">
+			<jsp:include page="header.jsp"/>
+			<div class="contents">
+				<div class="cntL">
+					<h2>
+						<%if("/ru".equals(request.getAttribute("root"))) {%>
+						Расписание
+						<%} else {%>
+						Schedule
+						<%}%>
+					</h2>
+					<p>
+						We offer variety of classes for children - music, dancing, gymnastics, ABCs/reading, math, arts and crafts.
+						Our day will consist of one or more of the following: Use and develop of language skills, use of large and small muscles, use of materials that encourage creativity and imaginary play, daily indoor and outdoor activities pending the weather, active and quiet play, individual and group activities.
+						This will all help in learning new ideas and skills, be exposed to a variety of cultures, and protect them from excess fatigue and over stimulation.
+					</p>
+					<p>
+						Children need a simple routine to follow. This helps them learn and anticipate what comes next. This is subject to change from day to day depending on the children’s interest and of course the weather.
+					</p>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+						<tr class="tbl-hdng">
+							<td>Time</td>
+							<td>Activity</td>
+						</tr>
+						<tr>
+							<th>8:00 AM - 8:45 AM</th>
+							<td>Free Play</td>
+						</tr>
+						<tr>
+							<th>8:45 AM - 9:15 AM</th>
+							<td>Breakfast</td>
+						</tr>
+						<tr>
+							<th>9:15 AM - 9:30 AM</th>
+							<td>Gymnastics</td>
+						</tr>
+						<tr>
+							<th>9:30 AM - 10:45 AM</th>
+							<td>Classes ( <a href="${root}/curriculum">View Curriculum</a> )</td>
+						</tr>
+						<tr>
+							<th>10:45 AM - 11:45 AM</th>
+							<td>Outside Play</td>
+						</tr>
+						<tr>
+							<th>11:45 AM - 12:00 AM</th>
+							<td>Washing Hands</td>
+						</tr>
+						<tr>
+							<th>12:00 PM - 12:30 PM</th>
+							<td>Lunch</td>
+						</tr>
+						<tr>
+							<th>12:30 PM - 1:00 PM</th>
+							<td>Teeth Brushing, Educational TV</td>
+						</tr>
+						<tr>
+							<th>1:00 PM - 3:00 PM</th>
+							<td>NAp Time</td>
+						</tr>
+						<tr>
+							<th>3:00 PM - 4:00 PM</th>
+							<td>Table games with teacher</td>
+						</tr>
+						<tr>
+							<th>4:00 PM - 4:30 PM</th>
+							<td>Snacks</td>
+						</tr>
+						<tr>
+							<th>4:30 PM - 5:15 PM</th>
+							<td>Outside Play</td>
+						</tr>
+						<tr>
+							<th>5:15 PM - 6:00 PM</th>
+							<td>Group play with teacher</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="cntR">
+					<div class="cntR">
+						<div class="sidebar-reel">
+							<a href="${root}/pictures">
+								<img src="/images/image-1.jpg">
+							</a>
+							<a href="${root}/pictures">
+								<img src="/images/image-2.jpg">
+							</a>
+							<a href="${root}/pictures">
+								<img src="/images/image-3.jpg">
+							</a>
+							<a href="${root}/pictures">
+								<img src="/images/image-4.jpg">
+							</a>
+						</div>
+						<a href="${root}/pictures" class="btn-gallery">View Picture Gallery</a>
+					</div>
+				</div>
+				<div class="cls"></div>
 			</div>
-		</td>
-	</tr>
-	<tr><td>10:45AM-11:45AM</td><td>outside play</td></tr>
-	<tr><td>11:45AM-12:00AM</td><td>washing hands</td></tr>
-	<tr><td>12:00PM-12:30PM</td><td>lunch</td></tr>
-	<tr><td>12:30PM-1:00PM</td><td>teeth brushing, educational TV</td></tr>
-	<tr><td>1:00PM-3:00PM</td><td>nap time</td></tr>
-	<tr><td>3:00PM-4:00PM</td><td>table games with teacher</td></tr>
-	<tr><td>4:00PM-4:30PM</td><td>snack</td></tr>
-	<tr><td>4:30PM-5:15PM</td><td>outside play</td></tr>
-	<tr><td>5:15PM-6:00PM</td><td>group play with teacher</td></tr>
-</table>
 
-<%--<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;mode=DAY&amp;height=630&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=okavangochildcare%40gmail.com&amp;color=%23182C57&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="500" height="630" frameborder="0" scrolling="no"></iframe>--%>
 
-<br/>
-<jsp:include page="footer.jsp"/>
+			<%--<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;mode=DAY&amp;height=630&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=okavangochildcare%40gmail.com&amp;color=%23182C57&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="500" height="630" frameborder="0" scrolling="no"></iframe>--%>
+			<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
+
 </body>
 </html>
