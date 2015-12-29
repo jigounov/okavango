@@ -18,7 +18,7 @@
 	</p>
 	<p>&copy; 2011-2015 Okavango Childcare. &nbsp;&nbsp;&nbsp; <strong>License No. 434412476</strong><br>
 		<strong>Address:</strong> 3790 Rosemar Ave, San Jose, CA 95127,
-		<a style="cursor: text;" href=<%=("/ru".equals(request.getAttribute("root"))?"/":"/ru/")%>>USA.</a>
+		<a style="cursor: text; text-decoration: none; color: white;" href=<%=("/ru".equals(request.getAttribute("root"))?"/":"/ru/")%>>USA.</a>
 		<br>
 		<strong>Phone:</strong> 1(408)439-5283. &nbsp;&nbsp;&nbsp; <strong>Email:</strong> <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a></p>
 </div>
