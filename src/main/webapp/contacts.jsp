@@ -56,16 +56,16 @@
 		<div class="container">
 			<jsp:include page="header.jsp"/>
 			<div class="contents">
-			   <div class="cntL">
-				   <h2>
+				<div class="cntL">
+					<h2>
 					   <%if("/ru".equals(request.getAttribute("root"))) {%>
 					   Russian Childcare - Мы говорим по-русски!
 					   <%} else {%>
 					   Okavango Childcare
 					   <%}%>
-				   </h2>
+					</h2>
 					<ul class="contactList">
-						<li><span class="glyphicon glyphicon-map-marker"></span> 3790 Rosemar Ave, San Jose, CA 95127.</li>
+						<li><span class="glyphicon glyphicon-map-marker"></span> Moving from 3790 Rosemar Ave, San Jose, CA 95127 to 1257 Avis Dr, San Jose, CA 95126.</li>
 						<li><span class="glyphicon glyphicon-star"></span> License No. 434412476</li>
 						<li><span class="glyphicon glyphicon-globe"></span> <a href="http://www.OkavangoChildCare.com">http://www.OkavangoChildCare.com</a></li>
 						<li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:OkavangoChildCare@gmail.com">OkavangoChildCare@gmail.com</a></li>
