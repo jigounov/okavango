@@ -27,28 +27,31 @@
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tbody><tr class="tbl-hdng">
 							<td>Program</td>
-							<td>24+ Months</td>
-							<td>18-24 Months</td>
+							<td>Rate</td>
 						</tr>
 						<tr>
-							<th>Full Time</th>
-							<td>$1200 per month</td>
-							<td>$1300 per month</td>
+							<th>Preschool 5 Days a Week</th>
+							<td>$1400 per month</td>
 						</tr>
 						<tr>
-							<th>Part Time (Whole Day)</th>
-							<td>$65 per month</td>
-							<td>$70 per month</td>
+							<th>Preschool 3 Days a Week (MWF)</th>
+							<td>$900 per month</td>
 						</tr>
 						<tr>
-							<th>Part Time (Half Day - 4 Hours)</th>
-							<td>$45 per month</td>
-							<td>$50 per month</td>
+							<th>Preschool 2 Days a Week (TTh)</th>
+							<td>$720 per month</td>
 						</tr>
 						<tr>
-							<th>Drop In (Hourly)</th>
+							<th>Preschool Half Day (4 hours a day)</th>
+							<td>$45 per day</td>
+						</tr>
+						<tr>
+							<th>After School (5 days a week)</th>
+							<td>$700 per month (*)</td>
+						</tr>
+						<tr>
+							<th>Drop In (hourly)</th>
 							<td>$12 per hour</td>
-							<td>$13 per hour</td>
 						</tr>
 						</tbody></table>
 					<br/>
