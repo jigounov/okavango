@@ -35,11 +35,11 @@
 						</tr>
 						<tr>
 							<th>Preschool 3 Days a Week (MWF)</th>
-							<td>$900 per month</td>
+							<td>$980 per month</td>
 						</tr>
 						<tr>
 							<th>Preschool 2 Days a Week (TTh)</th>
-							<td>$720 per month</td>
+							<td>$700 per month</td>
 						</tr>
 						<tr>
 							<th>Preschool Half Day (4 hours a day)</th>
